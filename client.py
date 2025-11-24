@@ -1,5 +1,11 @@
 from confluent_kafka import Producer, Consumer
 
+def acked(err, msg):
+    if err is not None:
+        print(f"Failed to deliver message: {err}")
+    else:
+        print(f"Produced message to {msg.topic()}")
+
 def run_client(username, password, topic):
     conf = {
         'bootstrap.servers': "192.168.49.2:31207",
@@ -13,7 +19,7 @@ def run_client(username, password, topic):
 
     # Producer
     producer = Producer(conf)
-    producer.produce(topic, key="key", value=f"Hello from {username}")
+    producer.produce(topic, key="key", value=f"Hello from {username}", callback=acked)
     producer.flush()
     print(f"{username} produced a message to {topic}")
 
