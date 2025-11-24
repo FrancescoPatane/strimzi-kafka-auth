@@ -12,8 +12,8 @@ spec:
     acls:
       - resource:
           type: topic
-          name: topic2
-          patternType: literal
+          name: client2-
+          patternType: prefix
         operations:
           - Read
           - Write
