@@ -32,10 +32,11 @@ def run_client(username, password, topic):
     consumer.close()
 
 # Run clients
-run_client('client1', 'zqpa9rMShtaeoB7FeYdsHP37QoUxj8Gi', 'client1-topic')
-run_client('client2', 'yEuzmJmRP1Wbtxu97Fqxy7FJmSjbwIF7', 'client2-topic')
-run_client('client1', 'zqpa9rMShtaeoB7FeYdsHP37QoUxj8Gi', 'client2-topic')
-run_client('client2', 'yEuzmJmRP1Wbtxu97Fqxy7FJmSjbwIF7', 'client1-topic')
-run_client('client1', 'zqpa9rMShtaeoB7FeYdsHP37QoUxj8Gi', 'topic1')
-run_client('client2', 'yEuzmJmRP1Wbtxu97Fqxy7FJmSjbwIF7', 'topic2')
+# run_client('client1', 'zqpa9rMShtaeoB7FeYdsHP37QoUxj8Gi', 'client1-topic')
+# run_client('client2', 'yEuzmJmRP1Wbtxu97Fqxy7FJmSjbwIF7', 'client2-topic')
+# run_client('client1', 'zqpa9rMShtaeoB7FeYdsHP37QoUxj8Gi', 'client2-topic')
+# run_client('client2', 'yEuzmJmRP1Wbtxu97Fqxy7FJmSjbwIF7', 'client1-topic')
+# run_client('client1', 'zqpa9rMShtaeoB7FeYdsHP37QoUxj8Gi', 'topic1')
+# run_client('client2', 'yEuzmJmRP1Wbtxu97Fqxy7FJmSjbwIF7', 'topic2')
+run_client('test-user', 'S63Y4XO3MW54BIq3ASwx4LgFioDspCCi', 'test-topic')
 
