@@ -17,3 +17,5 @@ spec:
         operations:
           - Read
           - Write
+          - Create
+          - Describe

@@ -47,3 +47,4 @@ Note: property is sasl.mechanism not sasl.mechanisms in CLI properties file.
 
 bin/kafka-console-consumer.sh   --bootstrap-server localhost:9094   --topic 'client1-topic'   --from-beginning   --consumer.config /tmp/client.properties   --max-messages 20
 
+bin/kafka-topics.sh --bootstrap-server localhost:9094 --command-config /tmp/client.properties --list

@@ -1,7 +1,7 @@
 from kafka import KafkaProducer, KafkaConsumer
 
 BROKER = "192.168.49.2:31207"       # use your Strimzi external listener address
-TOPIC = "test-topic"
+TOPIC = "test-topic-2"
 USERNAME = "test-user"
 PASSWORD = "S63Y4XO3MW54BIq3ASwx4LgFioDspCCi"
 
